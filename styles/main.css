@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+
+  font-family: 'Work Sans', sans-serif;
+}
+
+body > main {
+  flex: 1 1 auto;
+}
+
+:root {
+  --primary-color: #dc1b1b;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+a > i {
+  transition: all 0.25s;
+}
+
+a:hover > i {
+  transform: rotate(90deg);
+}
+
+h2.with-underline {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+h2.with-underline::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+
+  width: 5rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+
+  background-color: #444;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.section-title {
+  font-weight: 600;
+}
+
+.nav .nav__logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav .nav__link {
+  text-decoration: none;
+}
+
+.nav .nav__link > i {
+  margin-right: 5px;
+}
+
+.kv {
+  padding-top: 20px;
+}
+
+.kv__wrap {
+  position: relative;
+}
+
+.kv__bg {
+  width: 100%;
+  height: 600px;
+  background: url(../images/img_kv.png) center/contain no-repeat;
+}
+
+.kv__content {
+  position: absolute;
+  bottom: -50px;
+  left: 64px;
+  max-width: 550px;
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #e8e8ea;
+  box-shadow: 0px 12px 24px -6px rgba(24, 26, 42, 0.12);
+  border-radius: 12px;
+}
+
+.kv__bage {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #4b6bfb;
+  border-radius: 6px;
+}
+
+.kv__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #181a2a;
+  font-weight: 600;
+  margin: 16px 0 24px;
+}
+
+.kv__box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.kv__author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.kv__box span {
+  color: #97989f;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.kv__box img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.kv__author span {
+  font-weight: 500;
+}
+
+footer small i {
+  color: #dc1b1b;
+}

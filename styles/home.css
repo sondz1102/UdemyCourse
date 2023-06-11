@@ -1,0 +1,136 @@
+.posts-section {
+  padding: 6rem 0 2rem;
+}
+
+.posts-section .post-item .card-title {
+  font-weight: 600;
+  color: #181a2a;
+  margin: 16px 0 20px;
+  white-space: nowrap;
+  font-size: 24px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-bage {
+  display: inline-block;
+  color: #4b6bfb;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: rgba(75, 107, 251, 0.05);
+  border-radius: 6px;
+}
+
+.posts-section .post-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.posts-section .post-item {
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid #e8e8ea;
+  border-radius: 12px;
+}
+
+.posts-section .post-item .card {
+  border: none;
+}
+
+.posts-section .post-item .card img {
+  border-radius: 6px;
+}
+
+.posts-section .post-item .card-body {
+  margin-top: 16px;
+  padding: 0;
+}
+
+.posts-section .post-item .card-body p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.posts-section .post-item .card-img-top {
+  height: 240px;
+  width: auto;
+  object-fit: cover;
+}
+
+.posts-section .post-item {
+  position: relative;
+}
+
+.posts-section .post-item .post-item-menu {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .posts-section .post-item .post-item-menu {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  .posts-section .post-item:hover .post-item-menu {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.posts-section .post-item-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  transition: all 0.5s;
+  transform: scale(0.5);
+  transform-origin: top;
+  opacity: 0;
+}
+
+.posts-section .post-item-menu .menu-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #444;
+
+  transition: all 0.35s;
+  opacity: 0.7;
+}
+
+.posts-section .post-item-menu .menu-item:hover {
+  color: white;
+  background-color: black;
+  opacity: 1;
+}
+
+/**************
+  POSTS NAV
+*/
+
+.posts-nav .page-item.active .page-link {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.posts-nav .page-item .page-link {
+  color: #444;
+}
+
+.posts-nav .page-item:not(.active) .page-link:hover {
+  color: var(--primary-color);
+}
