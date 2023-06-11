@@ -159,3 +159,32 @@ ul {
 footer small i {
   color: #dc1b1b;
 }
+
+@media screen and (max-width: 1024px) {
+  .kv__content {
+    left: 0;
+    padding: 20px;
+    bottom: -20px;
+  }
+
+  .kv__bg {
+    height: 300px;
+    background-size: 100%;
+    background-position: top center;
+  }
+
+  .kv__content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .kv__title {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+
+  .kv__box span {
+    font-size: 13px;
+  }
+}
